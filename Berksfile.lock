@@ -1,0 +1,17 @@
+DEPENDENCIES
+  varnish
+    git: git://github.com/rackspace-cookbooks/varnish.git
+    revision: 18de89deda31e4f91b78b33b3a813ffbcf2bc21d
+    tag: v1.1.0
+
+GRAPH
+  apt (2.7.0)
+  build-essential (2.2.2)
+  varnish (1.1.0)
+    apt (~> 2.4)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  yum (3.5.3)
+  yum-epel (0.6.0)
+    yum (~> 3.0)
